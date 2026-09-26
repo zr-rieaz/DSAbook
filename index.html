@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="bn" class="dark" style="color-scheme: dark;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Structure & Algorithm (28542) - BTEB Probidhan 2022 Textbook</title>
+    <meta name="description" content="বাংলাদেশ কারিগরি শিক্ষা বোর্ড (BTEB) প্রবিধান-২০২২ অনুযায়ী ডিপ্লোমা-ইন-ইঞ্জিনিয়ারিং এর ডাটা স্ট্রাকচার অ্যান্ড অ্যালগরিদম (বিষয় কোড: ২৮৫৪২) সম্পূর্ণ ডিজিটাল পাঠ্যবই ও ইন্টারঅ্যাক্টিভ হ্যান্ডবুক।" />
+    <meta property="og:title" content="Data Structure & Algorithm (28542) - BTEB Probidhan 2022 Textbook" />
+    <meta property="og:description" content="কারিগরি শিক্ষা বোর্ড (BTEB) প্রবিধান-২০২২ অনুযায়ী ডাটা স্ট্রাকচার অ্যান্ড অ্যালগরিদম (২৮৫৪২) থিওরি ও প্র্যাকটিক্যাল পাঠ্যবই।" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <!-- Progressive Web App (PWA) & Mobile Meta -->
+    <meta name="theme-color" content="#09090b" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="BTEB 28542" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Google Fonts for crisp Bengali & Monospace Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-emerald-500/30">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Clear legacy Service Worker caches so new updates reflect immediately
+      if ('caches' in window) {
+        caches.keys().then((keys) => {
+          keys.forEach((key) => {
+            if (key !== 'bteb-dsa-v5') {
+              caches.delete(key);
+            }
+          });
+        });
+      }
+      if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').then((reg) => {
+            reg.update().catch(() => {});
+          }).catch(() => {});
+        });
+      }
+    </script>
+  </body>
+</html>
+
